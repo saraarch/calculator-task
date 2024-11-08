@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("https://wallpaper.dog/large/11039087.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Calculator container */
+.calculator {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Input display styling */
+#inputBox {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 24px;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
+    font-size: 65px;
+    text-align: right;
+    color: #fff;
+    border: solid 2px rgba(0, 0, 0, 0.3);
+}
+
+#inputBox::placeholder {
+    color: #fff;
+}
+
+/* Button styling */
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 24px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Specific operator button styling */
+button.operator {
+    background: rgba(255, 152, 0, 0.7); /* Orange shade for operators */
+}
+
+button.ac, button.del {
+    background: rgba(244, 67, 54, 0.7); /* Red shade for AC and DEL */
+}
+
+button.equalB {
+    background: rgba(76, 175, 80, 0.7); /* Green shade for equal button */
+}
